@@ -11,7 +11,7 @@ using System.Text;
 
 namespace EbookShop.Services
 {
-    public class SearchingService
+    public class SearchingService : IEbookSearchService
     {
         private EbookShopContext context;
 
@@ -19,13 +19,17 @@ namespace EbookShop.Services
         {
             this.context = context;
         }
-
-        //Zwraca tablicę ebooków, w których tytule/nazwie kategorii/nazwie autora zawiera się dana fraza.
-        public Ebook[] GetEbooksByTextInAnyProperty(string text)
+        /// <summary>
+        ///Zwraca tablicę ebooków, w których tytule/nazwie kategorii/nazwie autora zawiera się dana fraza.
+        /// 
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public IEnumerable<Ebook> GetEbooksByTextInAnyProperty(string text)
         {
             List<Ebook> returnValue = new List<Ebook>();
 
-            Ebook[] temp = GetEbooksByTitle(text);
+            Ebook[] temp = GetEbooksByTitle(text).ToArray();
             returnValue.AddRange(temp);
 
             temp = context.Ebooks.Where(
@@ -41,19 +45,19 @@ namespace EbookShop.Services
             returnValue.AddRange(temp);
 
 
-            return returnValue.ToArray();
+            return returnValue;
         }
 
 
         public string GetEbooksByTextInAnyProperty_JSON(string text)
         {
-            Ebook[] arr = GetEbooksByTextInAnyProperty(text);
+            Ebook[] arr = GetEbooksByTextInAnyProperty(text).ToArray();
             return JsonConvert.SerializeObject(arr);
         }
 
         public HtmlString GetEbooksByTextInAnyProperty_HtmlString(string text)
         {
-            Ebook[] arr = GetEbooksByTextInAnyProperty(text);
+            Ebook[] arr = GetEbooksByTextInAnyProperty(text).ToArray();
 
             using (StringWriter stringWriter = new StringWriter())
             using (JsonTextWriter jsonWriter = new JsonTextWriter(stringWriter))
@@ -67,17 +71,25 @@ namespace EbookShop.Services
                 return new HtmlString(stringWriter.ToString());
             }
         }
-
-        //Zwraca tablicę z ebookami, w których tytule zawiera się podana fraza
-        public Ebook[] GetEbooksByTitle(string title)
+        /// <summary>
+        ///Zwraca tablicę z ebookami, w których tytule zawiera się podana fraza
+        /// 
+        /// </summary>
+        /// <param name="title"></param>
+        /// <returns></returns>
+        public IEnumerable<Ebook> GetEbooksByTitle(string title)
         {
             Ebook[] returnValue = context.Ebooks.Where(e => e.Title.Contains(title)).ToArray();
 
             return returnValue;
         }
 
-        //Zwraca tablicę ebooków danej kategorii
-        public Ebook[] GetEbooksByCategory(Category category)
+        /// <summary>
+        ///Zwraca tablicę ebooków danej kategorii
+        /// </summary>
+        /// <param name="category"></param>
+        /// <returns></returns>
+        public IEnumerable<Ebook> GetEbooksByCategory(Category category)
         {
             Ebook[] returnValue = context.Ebooks.Where(
                 (e) =>
@@ -104,9 +116,10 @@ namespace EbookShop.Services
 
             return false;
         }
-
-        //Zwraca tablicę ebooków z danym autorem
-        public Ebook[] GetEbooksByAuthor(Author author)
+        ///<summary>
+        ///Zwraca tablicę ebooków z danym autorem
+        ///</summary>
+        public IEnumerable<Ebook> GetEbooksByAuthor(Author author)
         {
             Ebook[] returnValue = context.Ebooks.Where(
                 (e) =>
@@ -115,8 +128,9 @@ namespace EbookShop.Services
 
             return returnValue;
         }
-
-        //Sprawdza czy dany autor jest autorem danego ebooka
+        ///<summary>
+        ///Sprawdza czy dany autor jest autorem danego ebooka
+        ///</summary>
         private bool DoesEbookContainAuthor(Ebook e, Author author)
         {
             foreach (AuthorEbooks ebookCategories in e.AuthorEbooks)
