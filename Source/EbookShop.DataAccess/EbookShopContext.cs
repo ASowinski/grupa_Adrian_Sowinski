@@ -7,7 +7,7 @@ namespace EbookShop.DataAccess
     public class EbookShopContext : IdentityDbContext<AppUser>
     {
         
-
+        
         public EbookShopContext(DbContextOptions<EbookShopContext> options) : base(options){}
 
         public DbSet<Customer> Customers { get; set; }
