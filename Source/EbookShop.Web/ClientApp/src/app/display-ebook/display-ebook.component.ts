@@ -20,9 +20,10 @@ export class DisplayEbook implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get('http://816bd8a5-da52-4f40-939c-3daa18e08845.mock.pstmn.io/sample')
+    this.http.get('http://localhost:53420/api/Ebook')
       .subscribe((data: Array<Ebook>) => {
         this.ebooks = data;
+        console.log(this.ebooks);
       }
       );
   }

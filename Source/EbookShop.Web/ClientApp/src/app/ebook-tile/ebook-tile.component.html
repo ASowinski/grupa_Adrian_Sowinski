@@ -1,12 +1,14 @@
-<div class="block">
+<div id="container" class="block">
 
-  <a href="/"><img class="full-img" src="/src"></a>
+  <a href="/"><img class="full-img" src="{{getSrc()}}"></a>
   <a href="/">
-    <h4 id="title" class="margin-bottom "><strong>{{ ebookModel.Title }}</strong></h4>
+    <h4 id="title" class="margin-bottom "><strong>{{ ebookModel.title }}</strong></h4>
   </a>
-
-  <h5 class="margin-bottom">{{ ebookModel.Description }}</h5>
-  <h4>{{ebookModel.Price}} zł</h4>
+  <div id="toolpit" >
+    <a id="too_button"  data-toggle="toolpit" tooltip-placement="top" title="{{getAuthors()}}">
+    <h4>{{getAuthors()}}</h4></a>
+  </div>
+    <h4 >{{ebookModel.price}} zł</h4>
 
   <form class="customform s-12 margin-bottom2x" action="">
     <div>
