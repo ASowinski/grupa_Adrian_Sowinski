@@ -1,0 +1,66 @@
+2019-01-30 21:04:10.2746 Info Message Template Auto Format enabled
+2019-01-30 21:04:10.3112 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-30 21:04:10.5546 Info Adding target File Target[allfile]
+2019-01-30 21:04:10.5930 Info Adding target File Target[ownFile-web]
+2019-01-30 21:04:10.6260 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-30 21:04:10.7091 Info Found 45 configuration items
+2019-01-30 21:05:01.0472 Info Message Template Auto Format enabled
+2019-01-30 21:05:01.0751 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-30 21:05:01.2350 Info Adding target File Target[allfile]
+2019-01-30 21:05:01.2448 Info Adding target File Target[ownFile-web]
+2019-01-30 21:05:01.2706 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-30 21:05:01.3294 Info Found 45 configuration items
+2019-01-30 21:05:48.0560 Info Message Template Auto Format enabled
+2019-01-30 21:05:48.0890 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-30 21:05:48.3630 Info Adding target File Target[allfile]
+2019-01-30 21:05:48.3923 Info Adding target File Target[ownFile-web]
+2019-01-30 21:05:48.4202 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-30 21:05:48.4881 Info Found 45 configuration items
+2019-01-30 21:06:20.2308 Info Message Template Auto Format enabled
+2019-01-30 21:06:20.2628 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-30 21:06:20.4154 Info Adding target File Target[allfile]
+2019-01-30 21:06:20.4154 Info Adding target File Target[ownFile-web]
+2019-01-30 21:06:20.4476 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-30 21:06:20.4988 Info Found 45 configuration items
+2019-01-30 21:08:33.7492 Info Message Template Auto Format enabled
+2019-01-30 21:08:33.7835 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-30 21:08:34.0435 Info Adding target File Target[allfile]
+2019-01-30 21:08:34.0757 Info Adding target File Target[ownFile-web]
+2019-01-30 21:08:34.1069 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-30 21:08:34.1719 Info Found 45 configuration items
+2019-01-30 21:11:09.2784 Info Message Template Auto Format enabled
+2019-01-30 21:11:09.3113 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-30 21:11:09.5583 Info Adding target File Target[allfile]
+2019-01-30 21:11:09.5943 Info Adding target File Target[ownFile-web]
+2019-01-30 21:11:09.6204 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-30 21:11:09.6830 Info Found 45 configuration items
+2019-01-30 21:13:55.3038 Info Message Template Auto Format enabled
+2019-01-30 21:13:55.3364 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-30 21:13:55.6076 Info Adding target File Target[allfile]
+2019-01-30 21:13:55.6415 Info Adding target File Target[ownFile-web]
+2019-01-30 21:13:55.6703 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-30 21:13:55.7304 Info Found 45 configuration items
+2019-01-31 00:05:30.0803 Info Message Template Auto Format enabled
+2019-01-31 00:05:30.1359 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-31 00:05:30.4004 Info Adding target File Target[allfile]
+2019-01-31 00:05:30.4165 Info Adding target File Target[ownFile-web]
+2019-01-31 00:05:30.4509 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-31 00:05:30.5190 Info Found 45 configuration items
+2019-01-31 00:05:40.2666 Info Message Template Auto Format enabled
+2019-01-31 00:05:40.3015 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-31 00:05:40.5791 Info Adding target File Target[allfile]
+2019-01-31 00:05:40.6113 Info Adding target File Target[ownFile-web]
+2019-01-31 00:05:40.6534 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-31 00:05:40.7312 Info Found 45 configuration items
+2019-01-31 00:34:36.3704 Info Message Template Auto Format enabled
+2019-01-31 00:34:36.3983 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-31 00:34:36.5541 Info Adding target File Target[allfile]
+2019-01-31 00:34:36.5541 Info Adding target File Target[ownFile-web]
+2019-01-31 00:34:36.5886 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-31 00:34:36.6423 Info Found 45 configuration items
+2019-01-31 20:45:44.2500 Info Message Template Auto Format enabled
+2019-01-31 20:45:44.2900 Info Loading assembly: NLog.Web.AspNetCore
+2019-01-31 20:45:44.7095 Info Adding target File Target[allfile]
+2019-01-31 20:45:44.8007 Info Adding target File Target[ownFile-web]
+2019-01-31 20:45:44.8296 Info Configured from an XML element in C:\Users\Lukasz\NowyProjekt\grupa_Adrian_Sowinski\Source\EbookShop.Web\bin\Debug\netcoreapp2.1\nlog.config...
+2019-01-31 20:45:44.8866 Info Found 45 configuration items
